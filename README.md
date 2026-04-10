@@ -1,12 +1,21 @@
-Rubidiom, LLC
-========
+# Rubidiom, LLC
 
-Simple static website for Rubidiom, LLC.
+Simple static website for Rubidiom, LLC, built with [Astro](https://astro.build).
 
-## Deploying
+## Development
 
-Hosting is handled by dokku as a static site with the [buildpack-nginx](https://github.com/dokku/buildpack-nginx) buildpack (specified in `.env`).
+```bash
+npm install
+npm run dev
+```
 
-Configuration:
+## Build
 
-    NGINX_ROOT=build
+```bash
+npm run build
+npm run preview  # preview the built site locally
+```
+
+## Deployment
+
+Deployed via Dokploy. Push to `master` to trigger a deploy.

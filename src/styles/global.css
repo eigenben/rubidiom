@@ -1,0 +1,56 @@
+:root {
+  --color-bg: #a62626;
+  --color-text: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.4;
+  min-height: 100dvh;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: clamp(3rem, 10vw, 150px);
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 96px);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 32px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: clamp(1.125rem, 2vw, 20px);
+  padding-top: 10px;
+  font-weight: 400;
+}
